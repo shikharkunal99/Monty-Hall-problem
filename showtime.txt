@@ -2,18 +2,21 @@
 Problem:
 Suppose you're on a game show, and you're given the choice of n doors.
 Behind one door is a car; behind the others, goats.
-You pick a door, say No. 1, and the host, who knows what's behind the doors, opens n-2 another doors, which has a goat. Finally you are left with 2 doors one containing car and the other containing goat.
+You pick a door, say No. 1, and the host, who knows what's behind the doors, opens n-2 another doors, which has a goat.
+Finally you are left with 2 doors one containing car and the other containing goat.
 What is the probability p that you will win the car if you switch you choice to another door?
 
 Explanation:
 
 Let us consider the value of n as 3.
-There are three doors. Behind one door is a car and behind other two is goat. Suppose you choose the door 1. The game host now opens a door which has a goat ( say door 2).
+There are three doors. Behind one door is a car and behind other two is goat. Suppose you choose the door 1. 
+The game host now opens a door which has a goat ( say door 2).
 Now you are left with two doors. Behind one is a car and behind other is a goat.
 Is it smart choice to switch? The answer is yes. 
 In this case the probability of winning the car after switching is 2/3.
 If there are n doors initially, the probablity of winning the car after switching is (n-1)/n which is quite large for large values of n.
 
+Consider the case for 3 doors.
 Initially, before the host opens any door, the probability of each door having a car behind it is 1/3.
 Suppose you choose the door 1. Now the probability of having a car in the other two doors is 2/3.
 The host has now shown you that the door 2 contains a goat. So this entire probability 2/3 now gets concentrated on door 3 and the probability for door 1 remains 1/3.
