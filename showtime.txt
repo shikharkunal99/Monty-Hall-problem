@@ -23,8 +23,17 @@ The host has now shown you that the door 2 contains a goat. So this entire proba
 This explanation can similarly be extended for n doors.
 
 
-Further explanation : https://www.youtube.com/watch?v=4Lb-6rxZxx0
+Let us extend it for a case where k doors out of n are revealed by the host.
+n doors, k revealed
+Suppose we have n doors, with a car behind one of them. The probability of choosing the door with the car behind it on your first pick, is 1/n.
 
+Monty then opens k doors, where 0≤k≤n−2 (he has to leave your original door and at least one other door closed).
+
+The probability of picking the car if you choose a different door, is the chance of not having picked the car in the first place, which is (n−1)/n, times the probability of picking it now, which is 1/(n−k−1). This gives us a total probability of
+(n-1)/(n*(n-k-1))
+
+Python Simulation: https://github.com/shikharkunal99/Monty-Hall-problem/blob/master/monty.py
+Further explanation : https://www.youtube.com/watch?v=4Lb-6rxZxx0
 
 
 Solution:
